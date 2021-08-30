@@ -1,5 +1,5 @@
 
-var stripe = Stripe('pk_test_....');
+var stripe = Stripe('pk_test_51JLVKwSIqc0ZPHd2aYeRX9ipJJf2uwPYOLRGibnbxjmk0zhrsVGGsOvFLzRMgdoKzUFsHDved1mXVD2Wxakqvudl00x8ZUzPhz');
 
 var elements = stripe.elements();
 

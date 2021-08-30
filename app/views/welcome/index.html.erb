@@ -10,15 +10,15 @@
   <a href = "/my_subscriptions">My subscriptions</a>
   <h3>Buy Products</h3>
   <%= form_with url: "/checkout", method: :post do |form| %>
-    <%= check_box_tag "prod[]", "price_..." %> Prod1 --> <%="\u20B9" %>1
-    <br><%= check_box_tag "prod[]", "price_..." %> Prod2 --> <%="\u20B9" %>2
-    <br><%= check_box_tag "prod[]", "price_..." %> Prod3 --> <%="\u20B9" %>3
+    <%= check_box_tag "prod[]", "price_1JLW2GSIqc0ZPHd2h9X2yy2E" %> Prod1 --> <%="\u20B9" %>1
+    <br><%= check_box_tag "prod[]", "price_1JLW3DSIqc0ZPHd22k5pRJN8" %> Prod2 --> <%="\u20B9" %>2
+    <br><%= check_box_tag "prod[]", "price_1JLW3tSIqc0ZPHd29NfOnXku" %> Prod3 --> <%="\u20B9" %>3
     <br><br><button type="submit">Buy</button>
   <% end %>
   <h3>Subscribe to a plan</h3>
   <%= form_with url: "/subscription_checkout", method: :post do |form| %>
     <label for="plan"></label>
-    <% [ 'price_....', 'price_....', 'price_....' ].each_with_index do |pricing, index| %>
+    <% [ 'price_1JLW2GSIqc0ZPHd2fmRBstcv', 'price_1JLW3DSIqc0ZPHd2jTPG0GGX', 'price_1JLW3tSIqc0ZPHd2WjW7zLO5' ].each_with_index do |pricing, index| %>
       <%= radio_button_tag 'plan', pricing %><%= "Plan#{index+1} --> \u20B9#{0.5*(index+1)}/month" %><br>
     <% end %>
     
