@@ -1,4 +1,5 @@
 # Sample Rails app to study Stripe APIs
+[Link to the webapp](https://ruby-stripe-example.herokuapp.com/) 
 
 This simple app is built to understand how Stripe APIs can be used in our projects. It mainly focuses on backend operations.
 
