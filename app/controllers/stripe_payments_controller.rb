@@ -53,7 +53,6 @@ class StripePaymentsController < ApplicationController
   end
 
   def pay
-    p params['coupon']
     invoice = if !params['coupon'].nil? && params['coupon'] != ''
                 Stripe::Invoice.create({
                                          customer: $customer['id'],
