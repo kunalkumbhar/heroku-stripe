@@ -1,1 +1,1 @@
-setTimeout(function(){ window.location = "http://localhost:3000"; },2000);
+setTimeout(function(){ window.location = "/"; },2000);
