@@ -108,13 +108,13 @@ class StripePaymentsController < ApplicationController
                                                                     }
                                                                   },
                                                                   business_profile: {
-                                                                    privacy_policy_url: 'http://localhost:3000/success',
-                                                                    terms_of_service_url: 'http://localhost:3000/'
+                                                                    privacy_policy_url: "#{request.protocol}#{request.host_with_port}/",
+                                                                    terms_of_service_url: "#{request.protocol}#{request.host_with_port}/"
                                                                   }
                                                                 })
     portal_session = Stripe::BillingPortal::Session.create({
                                                              customer: $customer['id'],
-                                                             return_url: 'http://localhost:3000/',
+                                                             return_url: "#{request.protocol}#{request.host_with_port}/",
                                                              configuration: configuration['id']
                                                            })
     redirect_to portal_session['url']
